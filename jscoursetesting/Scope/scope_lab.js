@@ -19,3 +19,30 @@ const blockConst = "I'm a block-scoped const";
 // console.log(blockVar);
 // console.log(blockLet);
 
+function show(){
+    var functionVar = "I'm a block-scoped var";
+    let functionLet = "I'm a block-scoped let";
+    const functionConst = "I'm a block-scoped const";
+    }
+    show();
+    
+    // console.log(functionVar); // Throws ReferenceError
+    // console.log(functionLet); // Throws ReferenceError
+    // console.log(functionConst); // Throws ReferenceError
+
+    {
+        let letvar =1
+        const constvar=2
+        var varvar=4
+        // letvar=5
+        // constvar=3
+        // varvar=1
+        
+    }
+    // letvar=5
+    // constvar=3
+    // varvar=1
+
+    // console.log(letvar);
+    // console.log(constvar);
+    // console.log(varvar)
